@@ -42,3 +42,20 @@ function studentsLifecycle(name) {
   eat(name, "dinner");
   sleep(name);
 }
+
+function bake(degree) {
+  let message = "";
+
+  if (degree > 500) {
+    message = "I'm not a nuclear reactor!";
+  } else if (degree < 100) {
+    message = "I'm not a refrigerator!";
+  } else {
+    message = "That's a very comfortable temperature for me";
+  }
+
+  return message;
+}
+
+const status = bake(350);
+console.log(status);
